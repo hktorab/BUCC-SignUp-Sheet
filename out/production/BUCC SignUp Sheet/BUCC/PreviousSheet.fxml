@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="609.0" minWidth="983.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: e9e9e9;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BUCC.PreviousSheetController">
+
+
+
+
+   <left>
+
+           <AnchorPane prefHeight="461.0" prefWidth="184.0" BorderPane.alignment="CENTER">
+               <children>
+                   <Separator layoutX="197.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="462.0" prefWidth="4.0" />
+                   <Label alignment="CENTER" prefHeight="23.0" prefWidth="198.0" text="Sheet Name" AnchorPane.bottomAnchor="438.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+                       <font>
+                           <Font name="Rockwell Extra Bold" size="15.0" />
+                       </font>
+                   </Label>
+            <ScrollPane layoutX="2.0" layoutY="43.0" prefHeight="416.0" prefWidth="195.0">
+
+                  <TextArea fx:id="textAreaShowSheetName" prefHeight="981.0" prefWidth="192.0" style="-fx-background-color: e9e9e9;" />
+
+            </ScrollPane>
+            <Label fx:id="sheetError" alignment="CENTER" layoutX="1.0" layoutY="18.0" prefHeight="17.0" prefWidth="197.0" textFill="#ee1515">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+               </children>
+           </AnchorPane>
+      
+   </left>
+
+
+
+
+
+
+    <bottom>
+        <AnchorPane prefHeight="45.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+
+                <Button alignment="CENTER" layoutX="875.0" layoutY="9.0" mnemonicParsing="false" onAction="#buttonExit" prefHeight="27.0" prefWidth="86.0" text="Exit" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="875.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="9.0">
+                    <font>
+                        <Font name="Victorian LET Plain:1.0" size="11.0" />
+                    </font>
+                </Button>
+                <Button alignment="CENTER" layoutX="779.0" layoutY="9.0" mnemonicParsing="false" onAction="#buttonExtract" prefHeight="27.0" prefWidth="79.0" text="Extract" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="779.0" AnchorPane.rightAnchor="125.0" AnchorPane.topAnchor="9.0">
+                    <font>
+                        <Font name="Victorian LET Plain:1.0" size="11.0" />
+                    </font>
+                </Button>
+                <Button alignment="CENTER" layoutX="24.0" layoutY="9.0" mnemonicParsing="false" onAction="#buttonBack" prefHeight="27.0" prefWidth="116.0" text="Back" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="843.0" AnchorPane.topAnchor="9.0">
+                    <font>
+                        <Font name="Victorian LET Plain:1.0" size="11.0" />
+                    </font>
+                </Button>
+                <Button alignment="CENTER" layoutX="680.0" layoutY="9.0" mnemonicParsing="false" onAction="#buttonEdit" prefHeight="27.0" prefWidth="84.0" text="Edit" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="680.0" AnchorPane.rightAnchor="219.0" AnchorPane.topAnchor="9.0">
+                    <font>
+                        <Font name="Victorian LET Plain:1.0" size="11.0" />
+                    </font>
+                </Button>
+
+        </AnchorPane>
+    </bottom>
+
+
+
+
+
+    <top>
+        <AnchorPane prefHeight="106.0" prefWidth="983.0" BorderPane.alignment="CENTER">
+
+                <Label alignment="CENTER" layoutX="2.0" layoutY="-1.0" prefHeight="38.0" prefWidth="978.0" text="BRAC UNIVERSITY COMPUTER CLUB" AnchorPane.bottomAnchor="69.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="-1.0">
+                    <font>
+                        <Font name="Bauhaus 93" size="25.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="textfieldSheetName" layoutX="394.0" layoutY="51.0" prefHeight="25.0" prefWidth="269.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="394.0" AnchorPane.rightAnchor="346.0" AnchorPane.topAnchor="51.0" />
+                <Label layoutX="230.0" layoutY="52.0" prefHeight="23.0" prefWidth="138.0" text="Sheet Name:" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="230.0" AnchorPane.rightAnchor="620.0" AnchorPane.topAnchor="52.0">
+                    <font>
+                        <Font name="Californian FB Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Button layoutX="686.0" layoutY="51.0" mnemonicParsing="false" onAction="#buttonShowExecuteSheet" prefHeight="25.0" prefWidth="58.0" text="Show" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="686.0" AnchorPane.rightAnchor="239.0" AnchorPane.topAnchor="51.0" />
+                <Separator layoutX="1.0" layoutY="103.0" prefHeight="3.0" prefWidth="977.0" />
+            <Label fx:id="textfieldSheetNameError" layoutX="394.0" layoutY="76.0" prefHeight="17.0" prefWidth="243.0" textFill="#c60808">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+         <Label fx:id="textfieldSheetCreatedSuccesful" layoutX="423.0" layoutY="90.0" prefHeight="13.0" prefWidth="165.0" textFill="#0ac439">
+            <font>
+               <Font size="9.0" />
+            </font>
+         </Label>
+
+        </AnchorPane>
+    </top>
+
+
+
+
+
+
+
+
+
+
+   <center>
+
+           <ScrollPane prefHeight="458.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+
+                   <AnchorPane prefHeight="1000.0" prefWidth="776.0">
+
+                           <Separator layoutX="45.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="1001.0" prefWidth="0.0" />
+                           <TextArea fx:id="textAreaCount" layoutX="-1.0" layoutY="32.0" prefHeight="974.0" prefWidth="47.0" />
+                           <Label alignment="CENTER" prefHeight="25.0" prefWidth="45.0" text="#" />
+                           <Separator layoutX="226.0" orientation="VERTICAL" prefHeight="1001.0" prefWidth="0.0" />
+                           <TextArea fx:id="textAreaName" layoutX="48.0" layoutY="31.0" prefHeight="971.0" prefWidth="178.0" />
+                           <Separator layoutX="352.0" orientation="VERTICAL" prefHeight="1001.0" prefWidth="0.0" />
+                           <TextArea fx:id="textAreaId" layoutX="228.0" layoutY="31.0" prefHeight="976.0" prefWidth="125.0" />
+                           <Label alignment="CENTER" layoutX="48.0" prefHeight="28.0" prefWidth="178.0" text="NAME" />
+                           <Separator layoutX="427.0" orientation="VERTICAL" prefHeight="1001.0" prefWidth="0.0" />
+                           <Label alignment="CENTER" layoutX="354.0" layoutY="-1.0" prefHeight="27.0" prefWidth="74.0" text="Department" />
+                           <Label alignment="CENTER" layoutX="227.0" prefHeight="29.0" prefWidth="126.0" text="ID" />
+                           <TextArea fx:id="textAreaDept" layoutX="356.0" layoutY="31.0" prefHeight="976.0" prefWidth="71.0" />
+                           <Separator layoutX="540.0" orientation="VERTICAL" prefHeight="1001.0" prefWidth="0.0" />
+                           <Label alignment="CENTER" layoutX="428.0" layoutY="1.0" prefHeight="23.0" prefWidth="113.0" text="Phone" />
+                           <TextArea fx:id="textAreaPhone" layoutX="430.0" layoutY="31.0" prefHeight="976.0" prefWidth="109.0" />
+                           <Label alignment="CENTER" layoutX="543.0" layoutY="2.0" prefHeight="29.0" prefWidth="220.0" text="Email" />
+                           <TextArea fx:id="textAreaEmail" layoutX="546.0" layoutY="29.0" prefHeight="978.0" prefWidth="218.0" />
+
+                   </AnchorPane>
+
+           </ScrollPane>
+ 
+   </center>
+</BorderPane>

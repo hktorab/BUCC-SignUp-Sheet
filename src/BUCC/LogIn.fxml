@@ -6,31 +6,32 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="172.0" minWidth="600.0" prefHeight="393.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BUCC.LogInController">
 
-      <Label alignment="CENTER" layoutX="169.0" layoutY="116.0" prefHeight="28.0" prefWidth="95.0" text="User Name" AnchorPane.rightAnchor="363.0" AnchorPane.topAnchor="116.0">
+      <Label alignment="CENTER" layoutX="131.0" layoutY="116.0" prefHeight="28.0" prefWidth="95.0" text="User Name" AnchorPane.rightAnchor="381.0" AnchorPane.topAnchor="116.0">
          <font>
             <Font name="Bookman Old Style" size="15.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="169.0" layoutY="153.0" prefHeight="28.0" prefWidth="87.0" text="Password" AnchorPane.rightAnchor="372.0" AnchorPane.topAnchor="153.0">
+      <Label alignment="CENTER" layoutX="136.0" layoutY="153.0" prefHeight="28.0" prefWidth="87.0" text="Password" AnchorPane.rightAnchor="384.0" AnchorPane.topAnchor="153.0">
          <font>
             <Font name="Bookman Old Style" size="15.0" />
          </font>
       </Label>
-      <TextField fx:id="textFieldUserNameLogin" layoutX="250.0" layoutY="114.0" prefHeight="31.0" prefWidth="215.0" promptText="torab" AnchorPane.rightAnchor="142.0" AnchorPane.topAnchor="114.0">
+      <TextField fx:id="textFieldUserNameLogin" layoutX="239.0" layoutY="114.0" prefHeight="31.0" prefWidth="215.0" promptText="torab" AnchorPane.rightAnchor="153.0" AnchorPane.topAnchor="114.0">
          <font>
             <Font size="15.0" />
          </font>
       </TextField>
-      <PasswordField fx:id="textFieldPassWordLogin" layoutX="250.0" layoutY="155.0" prefHeight="31.0" prefWidth="215.0" promptText="a12sd23!" AnchorPane.rightAnchor="142.0" AnchorPane.topAnchor="155.0">
+      <PasswordField fx:id="textFieldPassWordLogin" layoutX="238.0" layoutY="155.0" prefHeight="31.0" prefWidth="215.0" promptText="a12sd23!" AnchorPane.rightAnchor="154.0" AnchorPane.topAnchor="155.0">
          <font>
             <Font size="15.0" />
          </font>
       </PasswordField>
-      <Button alignment="CENTER" layoutX="301.0" layoutY="219.0" mnemonicParsing="false" onAction="#buttonLogInToSignUpSheetCreator" prefHeight="31.0" prefWidth="80.0" text="Log In" AnchorPane.rightAnchor="226.0">
+      <Button alignment="CENTER" layoutX="267.0" layoutY="217.0" mnemonicParsing="false" onAction="#buttonLogInToSignUpSheetCreator" prefHeight="31.0" prefWidth="80.0" text="Log In" AnchorPane.rightAnchor="260.0">
          <font>
             <Font name="Constantia" size="15.0" />
          </font>
@@ -40,7 +41,7 @@
             <Font size="10.0" />
          </font>
       </Label>
-      <Hyperlink layoutX="282.0" layoutY="247.0" onAction="#hyperLinkForgetMyPassword" prefHeight="23.0" prefWidth="151.0" style="-fx-border-color: transparent;     -fx-padding: 4 0 4 0;" text="Forgot My Password!!" />
+      <Hyperlink layoutX="246.0" layoutY="247.0" onAction="#hyperLinkForgetMyPassword" prefHeight="23.0" prefWidth="151.0" style="-fx-border-color: transparent;     -fx-padding: 4 0 4 0;" text="Forgot My Password!!" />
       <Label fx:id="labelUserCreationPopUpMsg" alignment="CENTER" layoutX="93.0" layoutY="85.0" prefHeight="21.0" prefWidth="453.0" textFill="#1aa12e">
          <font>
             <Font size="15.0" />
@@ -61,6 +62,7 @@
          <Font name="Papyrus" size="10.0" />
       </font>
    </Label>
+   <Line endX="510.0" layoutX="93.0" layoutY="82.0" startX="-100.0" strokeMiterLimit="40.0" />
 
 
 

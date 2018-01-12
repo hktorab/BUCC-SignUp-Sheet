@@ -10,12 +10,13 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../sqlLite/sqlite-jdbc-3.15.1.jar!/" />
+          <root url="jar://H:/sqlLite/sqlite-jdbc-3.15.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="library" name="jxl" level="project" />
+    <orderEntry type="library" name="sqlite-jdbc-3.21.0" level="project" />
   </component>
 </module>
